@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--aggiungere attributo-->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Magico calendario Jaita</h1>
+        <h2 align="center" id="mese"></h2>
+        <table id="pippo">
+            <tr>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+            </tr>
+        </table>
+        <div style="margin-left: 15%; margin-right: 15%; margin:auto;padding: 5px;left:0">
+        <button class="changePage" onclick="previousMonth()">&#60;&#60;</button>
+        <button class="changePage" onclick="nextMonth()">&#62;&#62;</button>
+
+        </div>
+
+        <div id="modal" class="modal">
+            <div id="details">
+                <p id="detailsDay"></p>
+                <br>
+                <textarea id="detailsArea" cols="60" rows="1" placeholder="Inserisci un evento"></textarea>
+                <br>
+                <button type="button" onclick="document.getElementById('modal').style.display='none'">Chiudi</button>
+                <button type="button" onclick="addEvent()">Aggiungi</button>
+                <button onclick="deleteEvent()">Elimina</button>    
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+Francesco,Russo,1980-09-26,Milano,Ortopedico,25,no
+Leonardo,Ferrari,1960-04-29,Milano,Cardiologo,32,no
+Alessandro,Rossi,1990-01-14,Como,Cardiologo,18,no
+Lorenzo,Gallo,1992-07-03,Como,Neurologo,7,si
+Mattia,Costa,1993-10-21,Bergamo,Ortopedico,3,si
+Andrea,Martini,1987-09-24,Milano,Oculista,10,no
+Luca,Gentile,1979-03-01,Bergamo,Cardiologo,15,no

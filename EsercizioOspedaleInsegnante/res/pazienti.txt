@@ -1,0 +1,5 @@
+Matteo,Rossi,1991-07-15,Milano,Ortopedia,10,150
+Luca,Verdi,1989-06-26,Como,Chirurgia,15,120
+Lucia,Bianchi,1977-02-08,Padova,Ortopedia,14,150
+Giorgio,Gialli,1999-09-18,CantÃ¹,Cardiologia,22,180
+Elena,Bruno,1981-05-14,Milano,Neurologia,31,170

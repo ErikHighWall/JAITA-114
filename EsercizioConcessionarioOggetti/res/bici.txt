@@ -1,0 +1,3 @@
+3,GHI789,Specialized,Stumpjumper,2024,2,3000,true,false,12
+6,PQR678,Giant,Trance,2023,2,2500,true,true,11
+9,YZA567,Cannondale,Synapse,2022,2,3500,false,true,10

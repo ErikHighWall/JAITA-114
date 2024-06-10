@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettaglio alimento</title>
+</head>
+<body>
+    <p>
+        Alimento con id:
+        <span th:text="${alimentare.id}"></span>
+        <br>
+        Info:
+        <span th:text="|${alimentare.nome} costa ${alimentare.prezzo} con data scadenza ${alimentare.scadenza}|"></span>
+
+    </p>
+    <h3>
+        <a href="/pagina-alimentari">Torna alla lista</a>
+    </h3>
+</body>
+</html>

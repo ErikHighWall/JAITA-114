@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/alimentari.js"></script>
+</head>
+<div>
+
+    <h3>Alimentari</h3>
+    <table>
+        <thead>
+        <th>Dettaglio</th>
+            <th>ID</th>
+                <th>Nome </th>
+                <th>Prezzo </th>
+                <th>Scadenza </th>
+            <th>Modifica </th>
+            <th>Elimina</th>
+        </thead>
+        <tbody>
+    <!--spazio in cui inserirò la lista degli alimentari-->
+    <!-- TH: INDICA ELEMENTO CHE USO PER REINDERIZZARE I DATI
+             each: indica che uso un foreach
+            
+            "alimentare:  ${alimentari}"
+        alimnentare è l'oggetto,il tipo di dato contenuto nella lista
+    
+    $(etichetta) indica un placeholder,al posto di quel valore inseriro il dato effettivo,
+quindi la list adi laimenti
+/nomePagina-->
+
+            <tr th:each="alimentare : ${alimentari}">
+                <!--ogni alimento potrebbe avere un collegamento ai suoi dati specifici o all'id
+                
+                oppure nascondre l'id e renderlo visibile in alcuni casi-->
+               <td><a th:href="|/alimentare-byId?idAlimentare=${alimentare.id}|">
+                <button>Dettaglio</button>
+               </a></td>
+                <td th:text="${alimentare.id}"></td>
+                <td th:text="${alimentare.nome}"></td>
+                <td th:text="${alimentare.prezzo}"></td>
+                <td th:text="${alimentare.scadenza}"></td>
+
+                    <td>
+                       <button 
+                        th:modifica-id="${alimentare.id}"
+                        th:modifica-nome="${alimentare.nome}"
+                        th:modifica-prezzo="${alimentare.prezzo}"
+                        th:modifica-scadenza="${alimentare.scadenza}"
+                        onclick="modificaAlimento(this)">Modifica</button>
+                    </td>
+
+                    <td><a th:href="|/elimina-alimentare?idAlimentare=${alimentare.id}|"><!--qandoi premo il pulsante,dovrò fare riferimento a quell'end point 
+                    dal controllerAlimentare
+                    nell name idAlimentare ,mettici dentro l'id dell oggetto in base a quella bottone si preme-->
+                        <button>Elimina</button>
+                    </a></td>
+               
+                </tr>
+        </tbody>
+        <!-- tabella visualizzazione lista/mopdifcia alimento e cancellazione-->
+    </table>
+    
+    <!--uSO LA FORM per permettere l'inserimento di dati da parte dell'utente
+    Se facciao una richiesta inserrimento dati e uso il body allora probabilmente sfruttero il verbo POST
+questi dati potranno essere recuperati dal back-end e li passiamo al server-->
+<div class="contenuto" id="inserisci" th:if="${isAdmin}">
+    <h4>Inserimento di nuovo alimento</h4>
+    <!--<button id="crea" th:if="${isAdmin}">Aggiungi</button>-->
+<form action="/inserisci-alimentare" method="post">
+    
+   <label for="nome">Nome</label>
+   <input type="text" id="nome" name="nome" >
+   <label for="prezzo">Prezzo</label>
+   <input type="number" id="prezzo" name="prezzo" >
+   <label for="data_scadenza">Data Scadenza</label>
+   <input type="date" id="data_scadenza" name="data_scadenza" >
+   <br>
+
+</form>
+<!--SE SI VUOLE USARE UN BOTTONE INSERIRLO O PRIMA O DOPO LA FORM dentro il div-->
+</div>
+<br>
+<br>
+<div id="form-modifica" hidden>
+    <button  onclick="chiudiFormModifica()">Chiudi</button>
+    <form action ="/modifica-alimentare" method="post">
+        <label for="id">ID alimento</label>
+        <input type="number" id="modifica-id" name="id">
+        <label for="nome">Nome alimento</label>
+        <input type="text" id="modifica-nome" name="nome">
+        <label for="prezzo">Prezzo alimento</label>
+        <input type="number" id="modifica-prezzo" name="prezzo">
+        <label for="data_scadenza">Data scadenza</label>
+        <input type="date" id="modifica-scadenza" name="data-scadenza">
+        <br>
+        <input type="submit" value="Modifica alimento">
+
+    </form>
+
+</div>
+</body>
+</html>

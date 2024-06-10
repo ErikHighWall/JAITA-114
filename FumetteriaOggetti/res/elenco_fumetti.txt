@@ -1,0 +1,15 @@
+1,Zerocalcare,Non specificata,Zerocalcare,Zerocalcare,234,6.99
+2,L'ultima estate al cimitero,SantaMatita,Non specificato,Non specificato,34,1.99
+3,PaperDante (Letteratura a fumetti Vol. 17),Disney,Non specificato,Non specificato,90,7.99
+4,Le più belle storie di zio Paperone (Storie a fumetti Vol. 64),Disney,Non specificato,Non specificato,123,2.99
+5,L'attesa della felicità,Non specificata,Iwaoka Hisae,Non specificato,56,1.99
+6,Nausicaä della Valle del Vento,Panini Comics,Hayao Miyazaki,Hayao Miyazaki,389,9.90
+7,One Piece (Vol. 100),Star Comics,Eiichiro Oda,Eiichiro Oda,69,4.30
+8,Attack on Titan (Vol. 34),Panini Comics,Hajime Isayama,Hajime Isayama,215,4.90
+9,My Hero Academia (Vol. 31),Star Comics,Kohei Horikoshi,Kohei Horikoshi,85,4.30
+10,Dragon Ball Super (Vol. 16),Star Comics,Akira Toriyama,Toyotarou,90,4.30
+11,Death Note (Vol. 1),Panini Comics,Tsugumi Ohba,Takeshi Obata,24,4.90
+12,Tokyo Ghoul (Vol. 1),Panini Comics,Sui Ishida,Sui Ishida,19,4.90
+13,Berserk (Vol. 1),Panini Comics,Kentaro Miura,Kentaro Miura,267,4.90
+14,Fullmetal Alchemist (Vol. 1),Panini Comics,Hiromu Arakawa,Hiromu Arakawa,456,4.90
+15,JoJo's Bizarre Adventure (Vol. 1),Star Comics,Hirohiko Araki,Hirohiko Araki,153,4.30

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/prodotti.js"></script>
+    <title>Prodotti</title>
+</head>
+<body>
+    <h3>Prodotti</h3>
+    <table>
+        <thead>
+            <th>ID</th>
+                <th>Nome </th>
+                <th>Prezzo </th>
+            <th>Modifica </th>
+            <th>Elimina</th>
+        </thead>
+        <tbody>
+<tr th:each ="prodotto: ${prodotti}">
+    <td th:text="${prodotto.id}"></td>
+    <td th:text="${prodotto.nome}"></td>
+    <td th:text="${prodotto.prezzo}"></td>
+    <td>
+        <button
+        th:modifica-id="${prodotto.id}"
+        th:modifica-nome="${prodotto.nome}"
+        th:modifica-prezzo="${prodotto.prezzo}"
+        onclick="modificaProdotto(this)">Modifica</button>
+    </td>
+    <td><a th:href="|/elimina-prodotto?idProdotto=${prodotto.id}|"><!--qandoi premo il pulsante,dovrò fare riferimento a quell'end point 
+        dal controllerAlimentare
+        nell name idAlimentare ,mettici dentro l'id dell oggetto in base a quella bottone si preme-->
+            <button>Elimina</button>
+        </a></td>
+    </tr>
+
+        </tbody>
+        <table>
+            <h4>Aggiungi Prodotto</h4>
+            <form action="/inserisci-prodotto" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" >
+                <label for="prezzo">Prezzo</label>
+                <input type="number" id="prezzo" name="prezzo" >
+                <br>
+                <input type="submit" value="Crea nuovo alimento">
+             </form>
+             <br>
+<br>
+<div id="form-modifica" hidden>
+    <button  onclick="chiudiFormModifica()">Chiudi</button>
+    <form action ="/modifica-prodotto" method="post">
+        <label for="id">ID prodotto</label>
+        <input type="number" id="modifica-id" name="id">
+        <label for="nome">Nome prodotto</label>
+        <input type="text" id="modifica-nome" name="nome">
+        <label for="prezzo">Prezzo prodotto</label>
+        <input type="number" id="modifica-prezzo" name="prezzo">
+        <br>
+        <input type="submit" value="Modifica alimento">
+
+    </form>
+
+</div>
+             
+        </table>
+    </body>
+</html>

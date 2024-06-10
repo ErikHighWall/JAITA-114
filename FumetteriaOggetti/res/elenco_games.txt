@@ -1,0 +1,8 @@
+1,Borderlands 2,Multi-platform,Action RPG,Gearbox Software,80
+2,Divinity: Original Sin 2,Multi-platform,RPG,Larian Studios,96
+3,Final Fantasy VII,PlayStation,Role-playing,Square Enix,97
+4,Portal 2,Multi-platform,Puzzle,Valve,95
+5,Super Mario World,Super Nintendo,Platform,Nintendo,94
+6,Super Metroid,Super Nintendo,Action-adventure,Nintendo,67
+7,The Legend of Zelda: A Link to the Past,Super Nintendo,Action-adventure,Nintendo,97
+8,The Legend of Zelda: Breath of the Wild,Nintendo Switch,Action-adventure,Nintendo,10

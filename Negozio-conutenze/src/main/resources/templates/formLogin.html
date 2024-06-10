@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form lOGIN</title>
+</head>
+<body>
+    <h1>LOGIN</h1>
+    <br>
+    <form action="/login" method="post">
+        <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+        <br>
+        <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        </div>
+        
+     
+        <input type="submit" value="Login">
+        <div th:if="${error}" class="error-message">
+            <span th:text="${error}" style="color: red;"></span>
+        </div>
+    </form>
+    <br><br>
+    <!--hhtp://localhost:8080/formRegistrazione-->
+    Se non sei ancora registrato,accedi qui:
+    <form action="/formRegistrazione" method="get">
+        <input type="submit" value="Registrazione">
+       </form>
+</body>
+</html>

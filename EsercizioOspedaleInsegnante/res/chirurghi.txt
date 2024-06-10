@@ -1,0 +1,4 @@
+Alberto,Rossi,1968-09-23,Milano,Chirurgia,13,No,15,12
+Gsiovanni,Bianchi,1976-11-05,Milano,Chirurgia,15,No,20,15
+John,Doe,1972-06-19,Como,Chirurgia,12,No,12,7
+Jack,Black,1983-03-04,Milano,Chirurgia,18,No,20,19
